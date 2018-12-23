@@ -8,11 +8,9 @@ class App extends Component {
       height: 1,
       width: 1,
     };
-
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     const target = event.target;
     const value = target.value;
     const name = target.name;
@@ -20,6 +18,23 @@ class App extends Component {
     this.setState({
       [name]: value
     });
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    const canvas = document.querySelector("#pixel_canvas");
+    canvas.innerHTML = "";
+
+    for (let x = 0; x < this.state.height; x++) {
+      let row = document.createElement("tr");
+      canvas.appendChild(row);
+
+      for (let y = 0; y < this.state.width; y++) {
+        let cell = document.createElement("td");
+        row.appendChild(cell);
+      }
+    }
   }
 
   render() {
@@ -36,14 +51,31 @@ class App extends Component {
             <form id="sizePicker">
               <label>
               Grid Height:
-              <input type="number" id="input_height" name="height" min="1" value={this.state.height} onChange={this.handleChange} />
+              <input
+                type="number"
+                id="input_height"
+                name="height"
+                min="1"
+                value={this.state.height}
+                onChange={this.handleChange} />
               </label>
               <br />
               <label>
               Grid Width:
-              <input type="number" id="input_width" name="width" min="1" value={this.state.width} onChange={this.handleChange} />
+              <input
+                type="number"
+                id="input_width"
+                name="width"
+                min="1"
+                value={this.state.width}
+                onChange={this.handleChange} />
               </label>
-              <p><input type="submit" id="input_submit" /></p>
+              <p>
+              <input
+                type="submit"
+                id="input_submit"
+                onClick={this.handleSubmit} />
+              </p>
             </form>
 
             <hr className="Separator" />
@@ -54,6 +86,7 @@ class App extends Component {
 
           <div className="Canvas">
             <h2>Design Canvas</h2>
+            <table id="pixel_canvas"></table>
           </div>
         </div>
 

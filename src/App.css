@@ -63,3 +63,13 @@ appearance: none;
   margin: 20px auto;
   color: #282c34;
 }
+
+table {
+  border-spacing: 0;
+}
+
+td, tr {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+}
