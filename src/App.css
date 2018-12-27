@@ -51,8 +51,16 @@ appearance: none;
 #input_submit {
   padding: 10px 15px;
   border-radius: 5px;
-  font-size: 0.8em;
+  border: none;
+  font-size: 0.9em;
   margin-top: 10px;
+  background-color: var(--main-color);
+  color: #fff;
+  box-shadow: 3px 3px 12px 0px #00000073;
+}
+
+#input_submit:hover {
+  opacity: 0.9;
 }
 
 #colorPicker {
