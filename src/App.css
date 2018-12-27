@@ -1,3 +1,8 @@
+:root {
+  --main-color: #541329;
+  --main-text-color: #000;
+}
+
 input {
 -webkit-appearance: none;
 -moz-appearance: none;
@@ -9,7 +14,7 @@ appearance: none;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--main-color);
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -22,7 +27,7 @@ appearance: none;
 .App-Content {
   display: flex;
   flex-direction: row;
-  color: #282c34;
+  color: var(--main-text-color);
 }
 
 .App-link {
@@ -61,7 +66,7 @@ appearance: none;
 .Separator {
   max-width: 80%;
   margin: 20px auto;
-  color: #282c34;
+  border-color: var(--main-color);
 }
 
 table {
