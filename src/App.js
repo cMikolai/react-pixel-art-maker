@@ -42,9 +42,6 @@ class App extends Component {
     const color = document.querySelector('#colorPicker').value;
 
     event.target.style.backgroundColor = color;
-    event.stopPropagation();
-    event.preventDefault();
-    console.log(event.target)
   }
 
   render() {
@@ -97,7 +94,7 @@ class App extends Component {
 
           <div className="Canvas">
             <h2>Design Canvas</h2>
-            <table id="pixel_canvas" onClick={this.handleCellBgColor}></table>
+            <table id="pixel_canvas" onMouseDown={this.handleCellBgColor}></table>
           </div>
         </div>
 
