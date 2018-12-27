@@ -37,6 +37,7 @@ appearance: none;
 
 .App-Settings {
   width: 40%;
+  padding-left: 15px;
   padding-bottom: 20px;
   margin-right: 20px;
 }
@@ -86,7 +87,7 @@ label {
 }
 
 .Separator {
-  max-width: 80%;
+  max-width: 90%;
   margin: 20px auto;
   border-color: var(--main-color);
 }

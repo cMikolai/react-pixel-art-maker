@@ -44,6 +44,13 @@ class App extends Component {
     event.target.style.backgroundColor = color;
   }
 
+  handleTableBgColor = (event) => {
+    const tableColor = document.querySelector('#colorPickerTable').value;
+    const table = document.querySelector('#pixel_canvas')
+
+    table.style.backgroundColor = tableColor;
+  }
+
   render() {
     return (
       <div className="App">
@@ -54,7 +61,8 @@ class App extends Component {
 
         <div className="App-Content">
           <div className="App-Settings">
-            <h2>Choose Grid Size</h2>
+            <h2>Canvas Settings</h2>
+            <h3>Choose Grid Size</h3>
             <form id="sizePicker">
               <label>
               Grid Height:
@@ -88,7 +96,12 @@ class App extends Component {
 
             <hr className="Separator" />
 
-            <h2>Pick A Color</h2>
+            <h3>Pick A Background Color</h3>
+            <input type="color" id="colorPickerTable" onChange={this.handleTableBgColor} />
+
+            <hr className="Separator" />
+
+            <h3>Pick A Color</h3>
             <input type="color" id="colorPicker" />
           </div>
 
