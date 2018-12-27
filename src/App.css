@@ -1,6 +1,7 @@
 :root {
   --main-color: #541329;
   --main-text-color: #000;
+  --second-text-color: #fff;
 }
 
 input {
@@ -36,16 +37,29 @@ appearance: none;
 
 .App-Settings {
   width: 40%;
+  padding-bottom: 20px;
+  margin-right: 20px;
+}
+
+label {
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 2px solid black;
+  color: #000;
+  color: var(--second-text-color);
+  background-color: var(--main-color);
 }
 
 #input_height,
 #input_width {
   padding: 10px 15px;
   border-radius: 5px;
-  border-width: 1px;
+  border: none;
   max-width: 30px;
   margin: 5px 15px;
   font-size: 0.8em;
+  color: var(--second-text-color);
+  background-color: var(--main-color);
 }
 
 #input_submit {
@@ -55,8 +69,8 @@ appearance: none;
   font-size: 0.9em;
   margin-top: 10px;
   background-color: var(--main-color);
-  color: #fff;
-  box-shadow: 3px 3px 12px 0px #00000073;
+  color: var(--second-text-color);
+  border-bottom: 2px solid black;
 }
 
 #input_submit:hover {
