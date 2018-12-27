@@ -51,6 +51,10 @@ class App extends Component {
     table.style.backgroundColor = tableColor;
   }
 
+  handleColorRemove = (event) => {
+    event.target.style.backgroundColor = '';
+  }
+
   render() {
     return (
       <div className="App">
@@ -62,7 +66,7 @@ class App extends Component {
         <div className="App-Content">
           <div className="App-Settings">
             <h2>Canvas Settings</h2>
-            <h3>Choose Grid Size</h3>
+            {/*<h3>Choose Grid Size</h3>*/}
             <form id="sizePicker">
               <label>
               Grid Height:
@@ -103,11 +107,12 @@ class App extends Component {
 
             <h3>Pick A Color</h3>
             <input type="color" id="colorPicker" />
+            <p>Hint: Double click to remove a color</p>
           </div>
 
           <div className="Canvas">
             <h2>Design Canvas</h2>
-            <table id="pixel_canvas" onMouseDown={this.handleCellBgColor}></table>
+            <table id="pixel_canvas" onMouseDown={this.handleCellBgColor} onDoubleClick={this.handleColorRemove}></table>
           </div>
         </div>
 
