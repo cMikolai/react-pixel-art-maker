@@ -24,7 +24,8 @@ class App extends Component {
     event.preventDefault();
 
     const canvas = document.querySelector("#pixel_canvas");
-    canvas.innerHTML = "";
+    canvas.innerHTML = '';
+    canvas.style.backgroundColor = 'white';
 
     for (let x = 0; x < this.state.height; x++) {
       let row = document.createElement("tr");
@@ -35,6 +36,15 @@ class App extends Component {
         row.appendChild(cell);
       }
     }
+  }
+
+  handleCellBgColor = (event) => {
+    const color = document.querySelector('#colorPicker').value;
+
+    event.target.style.backgroundColor = color;
+    event.stopPropagation();
+    event.preventDefault();
+    console.log(event.target)
   }
 
   render() {
@@ -86,7 +96,7 @@ class App extends Component {
 
           <div className="Canvas">
             <h2>Design Canvas</h2>
-            <table id="pixel_canvas"></table>
+            <table id="pixel_canvas" onClick={this.handleCellBgColor}></table>
           </div>
         </div>
 
