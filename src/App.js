@@ -84,6 +84,7 @@ class App extends Component {
               <input
                 type="submit"
                 id="input_submit"
+                value="Create grid"
                 onClick={this.handleSubmit} />
               </p>
             </form>
