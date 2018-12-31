@@ -28,7 +28,7 @@ class App extends Component {
 
     const canvas = document.querySelector("#pixel_canvas");
     canvas.innerHTML = '';
-    canvas.style.backgroundColor = 'white';
+    this.setState({ background: '#fff'});
 
     for (let x = 0; x < this.state.height; x++) {
       let row = document.createElement("tr");
@@ -127,6 +127,7 @@ class App extends Component {
               id="pixel_canvas"
               style={{backgroundColor: this.state.background}}
               onMouseDown={this.handleCellColorOnClick}
+              onTouchStart={this.handleCellColorOnClick}
               onDoubleClick={this.handleColorRemove}>
             </table>
           </div>
