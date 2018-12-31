@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-pixel-art-maker/static/css/main.320a42d1.chunk.css"
   },
   {
-    "revision": "87c1ec4f33e39414732f79c488d1ffa1",
+    "revision": "cd34035a1324907517afd9bf3c550894",
     "url": "/react-pixel-art-maker/index.html"
   }
 ];
