@@ -136,6 +136,8 @@ class App extends Component {
               onMouseMove={this.state.mouseDown ? this.handleCellColorOnClick : null}
               onMouseUp={this.handleMouseState}
               onTouchStart={this.handleCellColorOnClick}
+              onTouchMove={this.state.mouseDown ? this.handleCellColorOnClick : null}
+              onTouchEnd={this.handleMouseState}
               onDoubleClick={this.handleColorRemove}>
             </table>
           </div>
