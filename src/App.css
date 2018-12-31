@@ -78,8 +78,7 @@ label {
   opacity: 0.9;
 }
 
-#colorPicker,
-#colorPickerTable {
+#colorPicker {
   border-radius: 5px;
   margin-left: 5px;
   background-color: var(--main-color);
