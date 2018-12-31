@@ -78,15 +78,6 @@ label {
   opacity: 0.9;
 }
 
-#colorPicker {
-  border-radius: 5px;
-  margin-left: 5px;
-  background-color: var(--main-color);
-  border-bottom: 2px solid black;
-  padding: 3px 5px;
-  height: 25px;
-}
-
 .Canvas {
   width: 60%;
 }

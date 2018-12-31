@@ -9,6 +9,7 @@ class App extends Component {
       height: 10,
       width: 10,
       background: '#fff',
+      cellColor: '#fff'
     };
   }
 
@@ -40,16 +41,21 @@ class App extends Component {
     }
   }
 
-  handleCellBgColor = (event) => {
-    const color = document.querySelector('#colorPicker').value;
-
-    event.target.style.backgroundColor = color;
+  // Cell color
+  handleCellColor = (color) => {
+    this.setState({ cellColor: color.hex });
   }
 
+  handleCellColorOnClick = (event) => {
+    event.target.style.backgroundColor = this.state.cellColor;
+  }
+
+  // Table background color
   handleBackgroundColor = (color) => {
     this.setState({ background: color.hex });
   };
 
+  // Remove color
   handleColorRemove = (event) => {
     event.target.style.backgroundColor = '';
   }
@@ -101,13 +107,15 @@ class App extends Component {
 
             <h3>Pick A Background Color</h3>
             <CirclePicker
-              onChangeComplete={ this.handleBackgroundColor }
+              onChangeComplete={this.handleBackgroundColor}
             />
 
             <hr className="Separator" />
 
             <h3>Pick A Color</h3>
-            <input type="color" id="colorPicker" />
+            <CirclePicker
+              onChangeComplete={this.handleCellColor}
+            />
             <p>Hint: Double click to remove a color</p>
           </div>
 
@@ -116,7 +124,7 @@ class App extends Component {
             <table
               id="pixel_canvas"
               style={{backgroundColor: this.state.background}}
-              onMouseDown={this.handleCellBgColor}
+              onMouseDown={this.handleCellColorOnClick}
               onDoubleClick={this.handleColorRemove}>
             </table>
           </div>
