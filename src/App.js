@@ -6,8 +6,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      height: 10,
-      width: 10,
+      height: 15,
+      width: 15,
       background: '#fff',
       cellColor: '#000'
     };
