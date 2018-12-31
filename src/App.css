@@ -102,3 +102,20 @@ td, tr {
   height: 20px;
   border: 1px solid #282c34;
 }
+
+/* MOBILE STYLES */
+@media screen and (max-width: 600px) {
+  .App-Content {
+    flex-direction: column;
+  }
+
+  .App-Settings,
+  .Canvas {
+    width: 100%;
+    padding: 0;
+  }
+
+  .Canvas {
+    text-align: center;
+  }
+}
