@@ -9,7 +9,7 @@ class App extends Component {
       height: 10,
       width: 10,
       background: '#fff',
-      cellColor: '#fff'
+      cellColor: '#000'
     };
   }
 
@@ -108,6 +108,7 @@ class App extends Component {
             <h3>Pick A Background Color</h3>
             <CirclePicker
               onChangeComplete={this.handleBackgroundColor}
+              color={ this.state.background }
             />
 
             <hr className="Separator" />
@@ -115,6 +116,7 @@ class App extends Component {
             <h3>Pick A Color</h3>
             <CirclePicker
               onChangeComplete={this.handleCellColor}
+              color={ this.state.cellColor }
             />
             <p>Hint: Double click to remove a color</p>
           </div>
