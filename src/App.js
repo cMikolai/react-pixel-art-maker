@@ -9,7 +9,8 @@ class App extends Component {
       height: 15,
       width: 15,
       background: '#fff',
-      cellColor: '#000'
+      cellColor: '#000',
+      mouseDown: false,
     };
   }
 
@@ -48,6 +49,11 @@ class App extends Component {
 
   handleCellColorOnClick = (event) => {
     event.target.style.backgroundColor = this.state.cellColor;
+    this.setState({ mouseDown: true });
+  }
+
+  handleMouseState = () => {
+    this.setState({ mouseDown: false });
   }
 
   // Table background color
@@ -127,6 +133,8 @@ class App extends Component {
               id="pixel_canvas"
               style={{backgroundColor: this.state.background}}
               onMouseDown={this.handleCellColorOnClick}
+              onMouseMove={this.state.mouseDown ? this.handleCellColorOnClick : null}
+              onMouseUp={this.handleMouseState}
               onTouchStart={this.handleCellColorOnClick}
               onDoubleClick={this.handleColorRemove}>
             </table>
