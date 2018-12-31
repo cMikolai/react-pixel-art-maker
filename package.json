@@ -5,6 +5,7 @@
   "homepage": "http://cmikolai.github.io/react-pixel-art-maker",
   "dependencies": {
     "react": "^16.7.0",
+    "react-color": "^2.17.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.1"
   },

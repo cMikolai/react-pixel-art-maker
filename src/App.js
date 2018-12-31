@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CirclePicker } from 'react-color';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     this.state = {
       height: 10,
       width: 10,
+      background: '#fff',
     };
   }
 
@@ -44,12 +46,9 @@ class App extends Component {
     event.target.style.backgroundColor = color;
   }
 
-  handleTableBgColor = (event) => {
-    const tableColor = document.querySelector('#colorPickerTable').value;
-    const table = document.querySelector('#pixel_canvas')
-
-    table.style.backgroundColor = tableColor;
-  }
+  handleBackgroundColor = (color) => {
+    this.setState({ background: color.hex });
+  };
 
   handleColorRemove = (event) => {
     event.target.style.backgroundColor = '';
@@ -101,7 +100,9 @@ class App extends Component {
             <hr className="Separator" />
 
             <h3>Pick A Background Color</h3>
-            <input type="color" id="colorPickerTable" onChange={this.handleTableBgColor} />
+            <CirclePicker
+              onChangeComplete={ this.handleBackgroundColor }
+            />
 
             <hr className="Separator" />
 
@@ -114,6 +115,7 @@ class App extends Component {
             <h2>Design Canvas</h2>
             <table
               id="pixel_canvas"
+              style={{backgroundColor: this.state.background}}
               onMouseDown={this.handleCellBgColor}
               onDoubleClick={this.handleColorRemove}>
             </table>
