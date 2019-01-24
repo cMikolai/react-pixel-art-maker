@@ -50,11 +50,12 @@ appearance: none;
 }
 
 .show-settings {
-  width: 50px;
-  height: 45px;
-  border-radius: 5px;
+  width: 40px;
+  height: 55px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   border: none;
-  margin: 5px 15px;
+  margin: 5px 0;
   font-size: 1.4em;
   font-weight: bold;
   color: var(--second-text-color);
