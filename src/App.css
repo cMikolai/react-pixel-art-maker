@@ -50,11 +50,12 @@ appearance: none;
 }
 
 .show-settings {
-  padding: 10px 15px;
+  width: 50px;
+  height: 45px;
   border-radius: 5px;
   border: none;
   margin: 5px 15px;
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: bold;
   color: var(--second-text-color);
   background-color: var(--main-color);
@@ -64,7 +65,7 @@ appearance: none;
 .line {
    left: 10px;
    margin: 4px auto;
-   height: 2px;
+   height: 3px;
    width: 20px;
    background: #fff;
    border-radius: 2px;
