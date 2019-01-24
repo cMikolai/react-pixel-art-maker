@@ -2,6 +2,7 @@
   --main-color: #3f51b5;
   --main-text-color: #000;
   --second-text-color: #fff;
+  --highlight: #e81e63;
 }
 
 input {
@@ -45,20 +46,20 @@ appearance: none;
 
 .mobile-menu {
   margin-bottom: 20px;
-  width: 100%;
-  text-align: left;
+  float: left;
 }
 
 .show-settings {
-  width: 50px;
-  height: 45px;
-  border-radius: 5px;
+  width: 40px;
+  height: 55px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   border: none;
-  margin: 5px 15px;
+  margin: 15px 0;
   font-size: 1.4em;
   font-weight: bold;
   color: var(--second-text-color);
-  background-color: var(--main-color);
+  background-color: var(--highlight);
   border-bottom: 2px solid black;
 }
 
