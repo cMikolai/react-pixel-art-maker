@@ -55,7 +55,13 @@ appearance: none;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   border: none;
+<<<<<<< HEAD
   margin: 15px 0;
+||||||| merged common ancestors
+  margin: 5px 15px;
+=======
+  margin: 5px 0;
+>>>>>>> dc82c80e66034e310f3bd269ca342d312bbc79ae
   font-size: 1.4em;
   font-weight: bold;
   color: var(--second-text-color);
