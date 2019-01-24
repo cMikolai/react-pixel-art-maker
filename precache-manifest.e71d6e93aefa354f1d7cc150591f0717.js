@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/react-pixel-art-maker/static/js/runtime~main.a2b86fff.js"
   },
   {
-    "revision": "179af63c5a8f5b82681d",
-    "url": "/react-pixel-art-maker/static/js/main.179af63c.chunk.js"
+    "revision": "374e6226bf691cca9a0b",
+    "url": "/react-pixel-art-maker/static/js/main.374e6226.chunk.js"
   },
   {
     "revision": "96ab848c05fc0e2b7524",
     "url": "/react-pixel-art-maker/static/js/1.96ab848c.chunk.js"
   },
   {
-    "revision": "179af63c5a8f5b82681d",
-    "url": "/react-pixel-art-maker/static/css/main.320a42d1.chunk.css"
+    "revision": "374e6226bf691cca9a0b",
+    "url": "/react-pixel-art-maker/static/css/main.6a327809.chunk.css"
   },
   {
-    "revision": "cd34035a1324907517afd9bf3c550894",
+    "revision": "159f75e90f350517f94a434484311410",
     "url": "/react-pixel-art-maker/index.html"
   }
 ];
