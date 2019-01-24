@@ -11,6 +11,7 @@ class App extends Component {
       background: '#fff',
       cellColor: '#000',
       mouseDown: false,
+      menuVisible: true
     };
   }
 
@@ -66,6 +67,14 @@ class App extends Component {
     event.target.style.backgroundColor = '';
   }
 
+  mobileMenu = () => {
+    this.setState(prevState => ({
+      menuVisible: !prevState.menuVisible
+    }));
+  }
+
+  // TODO: Separate into single components
+
   render() {
     return (
       <div className="App">
@@ -74,58 +83,75 @@ class App extends Component {
           <h1>Pixel Art Maker</h1>
         </header>
 
+        <div className="mobile-menu">
+          <button className="show-settings" onClick={this.mobileMenu}>
+            {this.state.menuVisible
+              ? "X"
+              : <>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                </>
+            }
+          </button>
+        </div>
+
         <div className="App-Content">
-          <div className="App-Settings">
-            <h2>Canvas Settings</h2>
-            {/*<h3>Choose Grid Size</h3>*/}
-            <form id="sizePicker">
-              <label>
-              Grid Height:
-              <input
-                type="number"
-                id="input_height"
-                name="height"
-                min="1"
-                value={this.state.height}
-                onChange={this.handleChange} />
-              </label>
-              <br />
-              <label>
-              Grid Width:
-              <input
-                type="number"
-                id="input_width"
-                name="width"
-                min="1"
-                value={this.state.width}
-                onChange={this.handleChange} />
-              </label>
-              <p>
-              <input
-                type="submit"
-                id="input_submit"
-                value="Create grid"
-                onClick={this.handleSubmit} />
-              </p>
-            </form>
+          {this.state.menuVisible
+            ? <div className="App-Settings">
 
-            <hr className="Separator" />
+                <h2>Canvas Settings</h2>
+                {/*<h3>Choose Grid Size</h3>*/}
+                <form id="sizePicker">
+                  <label>
+                  Grid Height:
+                  <input
+                    type="number"
+                    id="input_height"
+                    name="height"
+                    min="1"
+                    value={this.state.height}
+                    onChange={this.handleChange} />
+                  </label>
+                  <br />
+                  <label>
+                  Grid Width:
+                  <input
+                    type="number"
+                    id="input_width"
+                    name="width"
+                    min="1"
+                    value={this.state.width}
+                    onChange={this.handleChange} />
+                  </label>
+                  <p>
+                  <input
+                    type="submit"
+                    id="input_submit"
+                    value="Create grid"
+                    onClick={this.handleSubmit} />
+                  </p>
+                </form>
 
-            <h3>Pick A Background Color</h3>
-            <CirclePicker
-              onChangeComplete={this.handleBackgroundColor}
-              color={ this.state.background }
-            />
+                <hr className="Separator" />
 
-            <hr className="Separator" />
+                <h3>Pick A Background Color</h3>
+                <CirclePicker
+                  onChangeComplete={this.handleBackgroundColor}
+                  color={ this.state.background }
+                />
 
-            <h3>Pick A Color</h3>
-            <CirclePicker
-              onChangeComplete={this.handleCellColor}
-              color={ this.state.cellColor }
-            />
-            <p>Hint: Double click to remove a color</p>
-          </div>
+                <hr className="Separator" />
+
+                <h3>Pick A Color</h3>
+                <CirclePicker
+                  onChangeComplete={this.handleCellColor}
+                  color={ this.state.cellColor }
+                />
+                <p>Hint: Double click to remove a color</p>
+              </div>
+            : null
+          }
 
           <div className="Canvas">
             <h2>Design Canvas</h2>
