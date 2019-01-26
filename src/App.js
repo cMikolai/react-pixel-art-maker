@@ -162,6 +162,7 @@ class App extends Component {
               onMouseDown={this.handleCellColorOnClick}
               onMouseMove={this.state.mouseDown ? this.handleCellColorOnClick : null}
               onMouseUp={this.handleMouseState}
+              onMouseLeave={this.handleMouseState}
               onTouchStart={this.handleCellColorOnClick}
               onTouchMove={this.state.mouseDown ? this.handleCellColorOnClick : null}
               onTouchEnd={this.handleMouseState}
