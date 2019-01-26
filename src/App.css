@@ -113,7 +113,6 @@ label {
 
 .Canvas {
   width: 60%;
-  margin-left: 20px;
   text-align: center;
   font-size: calc(10px + 1vmin);
 }
