@@ -91,8 +91,8 @@ class App extends Component {
         <div className="mobile-menu">
           <button className="show-settings" onClick={this.mobileMenu}>
             {this.state.menuVisible
-              ? <FontAwesomeIcon icon="angle-left" />
-              : <FontAwesomeIcon icon="angle-right" />
+              ? <FontAwesomeIcon icon="angle-left" size="lg" />
+              : <FontAwesomeIcon icon="angle-right" size="lg" />
             }
           </button>
         </div>

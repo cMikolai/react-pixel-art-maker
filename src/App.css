@@ -49,6 +49,7 @@ appearance: none;
   position: fixed;
   left: 0;
   margin-top: -0.86em;
+  z-index: 1;
 }
 
 .show-settings {
