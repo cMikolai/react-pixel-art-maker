@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { CirclePicker } from 'react-color';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft, faAngleRight, faArrowsAltH, faArrowsAltV } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faAngleLeft, faAngleRight, faArrowsAltH, faArrowsAltV)
 
 class App extends Component {
   constructor(props) {
@@ -86,12 +91,8 @@ class App extends Component {
         <div className="mobile-menu">
           <button className="show-settings" onClick={this.mobileMenu}>
             {this.state.menuVisible
-              ? "X"
-              : <>
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-                </>
+              ? <FontAwesomeIcon icon="angle-left" />
+              : <FontAwesomeIcon icon="angle-right" />
             }
           </button>
         </div>
@@ -104,7 +105,7 @@ class App extends Component {
                 {/*<h3>Choose Grid Size</h3>*/}
                 <form id="sizePicker">
                   <label>
-                  Grid Height:
+                  <FontAwesomeIcon icon="arrows-alt-v" /> Grid Height:
                   <input
                     type="number"
                     id="input_height"
@@ -115,7 +116,7 @@ class App extends Component {
                   </label>
                   <br />
                   <label>
-                  Grid Width:
+                  <FontAwesomeIcon icon="arrows-alt-h" /> Grid Width:
                   <input
                     type="number"
                     id="input_width"

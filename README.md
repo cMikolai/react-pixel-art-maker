@@ -52,6 +52,7 @@ The app is built with the following code dependencies:
 1. [React](https://github.com/facebook/React)
 2. [React Color](https://github.com/casesandberg/react-color)
 3. [gh-pages](https://github.com/tschaub/gh-pages)
+4. [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
 
 ## Contributing
 
