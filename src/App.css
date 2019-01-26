@@ -153,13 +153,3 @@ td, tr {
     text-align: center;
   }
 }
-
-/* @media screen and (min-width: 601px) {
-  .mobile-menu {
-    display: none;
-  }
-
-  .App-Settings {
-    display: initial;
-  }
-} */

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { CirclePicker } from 'react-color';
 import './App.css';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleLeft, faAngleRight, faArrowsAltH, faArrowsAltV } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight, faArrowsAltH, faArrowsAltV } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faAngleLeft, faAngleRight, faArrowsAltH, faArrowsAltV)
+library.add(faAngleLeft, faAngleRight, faArrowsAltH, faArrowsAltV);
 
 class App extends Component {
   constructor(props) {
