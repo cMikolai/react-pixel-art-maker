@@ -88,15 +88,6 @@ class App extends Component {
           <h1>Pixel Art Maker</h1>
         </header>
 
-        <div className="mobile-menu">
-          <button className="show-settings" onClick={this.mobileMenu}>
-            {this.state.menuVisible
-              ? <FontAwesomeIcon icon="angle-left" size="lg" />
-              : <FontAwesomeIcon icon="angle-right" size="lg" />
-            }
-          </button>
-        </div>
-
         <div className="App-Content">
           {this.state.menuVisible
             ? <div className="App-Settings">
@@ -154,7 +145,16 @@ class App extends Component {
             : null
           }
 
-          <div className="Canvas">
+          <div className={this.state.menuVisible ? "mobile-menu menu-open" : "mobile-menu menu-closed"}>
+            <button className="show-settings" onClick={this.mobileMenu}>
+              {this.state.menuVisible
+                ? <FontAwesomeIcon icon="angle-left" size="lg" />
+                : <FontAwesomeIcon icon="angle-right" size="lg" />
+              }
+            </button>
+          </div>
+
+          <div className={this.state.menuVisible ? "Canvas" : "Canvas full-width"}>
             <h2>Design Canvas</h2>
             <table
               id="pixel_canvas"
