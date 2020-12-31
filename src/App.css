@@ -175,6 +175,7 @@ td, tr {
   .App-Settings {
     z-index: 2;
     background: white;
+    max-width: 100%;
   }
 
   .App-Settings,
