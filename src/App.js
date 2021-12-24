@@ -14,7 +14,7 @@ class App extends Component {
       height: 15,
       width: 15,
       background: '#fff',
-      cellColor: '#000',
+      cellColor: '#f44336',
       mouseDown: false,
       menuVisible: true
     };
