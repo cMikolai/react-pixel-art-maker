@@ -93,7 +93,6 @@ appearance: none;
 }
 
 label {
-  padding: 10px;
   border-radius: 5px;
   border-bottom: 2px solid black;
   color: #000;
@@ -103,12 +102,12 @@ label {
 
 #input_height,
 #input_width {
-  padding: 10px 15px;
+  padding: 10px 0 10px 15px;
   border-radius: 5px;
   border: none;
   max-width: 30px;
-  margin: 5px 15px;
-  font-size: 0.8em;
+  margin: 5px 0 5px 15px;
+  font-size: calc(10px + 1vmin);
   color: var(--second-text-color);
   background-color: var(--main-color);
 }
@@ -143,6 +142,17 @@ label {
 
 .circle-picker {
   margin: 0 auto !important;
+}
+
+#sizePicker label {
+  display: block;
+  width: 210px;
+  margin: 0 auto;
+}
+
+#sizePicker svg {
+  width: 14.33px;
+  margin-right: 3px;
 }
 
 .Separator {
