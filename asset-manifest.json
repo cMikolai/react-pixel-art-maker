@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-pixel-art-maker/static/css/main.4ce9182c.chunk.css",
-  "main.js": "/react-pixel-art-maker/static/js/main.4b9fdb12.chunk.js",
-  "main.js.map": "/react-pixel-art-maker/static/js/main.4b9fdb12.chunk.js.map",
+  "main.css": "/react-pixel-art-maker/static/css/main.1e053c7d.chunk.css",
+  "main.js": "/react-pixel-art-maker/static/js/main.566b1995.chunk.js",
+  "main.js.map": "/react-pixel-art-maker/static/js/main.566b1995.chunk.js.map",
   "runtime~main.js": "/react-pixel-art-maker/static/js/runtime~main.7d051342.js",
   "runtime~main.js.map": "/react-pixel-art-maker/static/js/runtime~main.7d051342.js.map",
   "static/js/2.894bb184.chunk.js": "/react-pixel-art-maker/static/js/2.894bb184.chunk.js",
   "static/js/2.894bb184.chunk.js.map": "/react-pixel-art-maker/static/js/2.894bb184.chunk.js.map",
   "index.html": "/react-pixel-art-maker/index.html",
-  "precache-manifest.4f7e652dbbcf8e3711231a0d6b035c45.js": "/react-pixel-art-maker/precache-manifest.4f7e652dbbcf8e3711231a0d6b035c45.js",
+  "precache-manifest.fb7b711441f230ae4aeb9f28cfb6012d.js": "/react-pixel-art-maker/precache-manifest.fb7b711441f230ae4aeb9f28cfb6012d.js",
   "service-worker.js": "/react-pixel-art-maker/service-worker.js",
-  "static/css/main.4ce9182c.chunk.css.map": "/react-pixel-art-maker/static/css/main.4ce9182c.chunk.css.map"
+  "static/css/main.1e053c7d.chunk.css.map": "/react-pixel-art-maker/static/css/main.1e053c7d.chunk.css.map"
 }

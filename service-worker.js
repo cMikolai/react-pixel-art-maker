@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-pixel-art-maker/precache-manifest.4f7e652dbbcf8e3711231a0d6b035c45.js"
+  "/react-pixel-art-maker/precache-manifest.fb7b711441f230ae4aeb9f28cfb6012d.js"
 );
 
 workbox.clientsClaim();
