@@ -105,11 +105,19 @@ label {
   padding: 10px 0 10px 15px;
   border-radius: 5px;
   border: none;
-  max-width: 30px;
+  max-width: 40px;
   margin: 5px 0 5px 15px;
   font-size: calc(10px + 1vmin);
   color: var(--second-text-color);
   background-color: var(--main-color);
+}
+
+#input_height::-webkit-inner-spin-button,
+#input_height::-webkit-outer-spin-button,
+#input_width::-webkit-inner-spin-button,
+#input_width::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 #input_submit {
