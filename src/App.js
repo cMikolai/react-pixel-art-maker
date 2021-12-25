@@ -53,6 +53,7 @@ class App extends Component {
     this.setState({ cellColor: color.hex });
   }
 
+  // TODO: add "stamps", pre-set pixel art that can be added, e.g. stars or hearts
   handleCellColorOnClick = (event) => {
     event.target.style.backgroundColor = this.state.cellColor;
     this.setState({ mouseDown: true });
