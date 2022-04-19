@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Pixel Art Maker
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Table of Contents
+
+* [Designs](#designs)
+* [Available Scripts](#available-scripts)
+* [Contributing](#contributing)
+* [License](#license)
+* [Learn More](#learn-more)
+
+## Designs
+
+You can find the link to the design mockups over [here](https://www.figma.com/file/nnBZmGhJ0kMe3g19Q1ER4n/React-Pixel-Art-Maker?node-id=0%3A1).
 
 ## Available Scripts
 
@@ -38,6 +50,15 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Contributing
+
+This repository is open for contribution. For details on how to get started, check out our [Contributing Guide](/CONTRIBUTING.md).
+
+## License
+
+This repository is licensed under the GNU General Public License v3.0.
+Please, read [this](/LICENSE.md) for additional information.
 
 ## Learn More
 
