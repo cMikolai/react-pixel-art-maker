@@ -10,6 +10,14 @@ const Container = styled.div`
   font-size: calc(16px + 2vmin);
   height: 100vh;
   flex: 1 0 300px;
+  position: relative;
+
+  @media (max-width: 767px) {
+    position: fixed;
+    width: 300px;
+    z-index: 1;
+    box-shadow: 2px 5px 10px black;
+  }
 `
 
 const TopSection = styled.div`
