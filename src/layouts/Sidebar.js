@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faXmark, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+
+import GridSize from '../components/GridSize.js'
 
 const Container = styled.div`
   background-color: #3F51B5;
@@ -29,10 +31,14 @@ const TopSection = styled.div`
   padding-right: 20px;
 `
 
+const MainSection = styled.div`
+  padding: 20px;
+`
+
 const Title = styled.h2`
   color: #fff;
-  margin: 0;
-  font-size: 12px;
+  margin: 0 0 20px 0;
+  font-size: 16px;
   width: 100%;
 `
 
@@ -51,7 +57,10 @@ const Sidebar = props => {
         }
       </TopSection>
 
-      <Title>Canvas Settings</Title>
+      <MainSection>
+        <Title>Canvas Settings</Title>
+          <GridSize />
+      </MainSection>
 
     </Container>
   )
