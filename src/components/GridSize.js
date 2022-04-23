@@ -64,8 +64,8 @@ const Submit = styled.input`
 `
 
 const SizePicker = () => {
-  const [height, setHeight] = useState(0);
-  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(1);
+  const [width, setWidth] = useState(1);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -129,7 +129,6 @@ const SizePicker = () => {
 
 
 const GridSize = () => {
-
   const [isOpenOption, toggleOpenOption] = useState(false);
 
   return (
