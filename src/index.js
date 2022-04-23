@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
+
+import Header from './layouts/Header.js'
+import Sidebar from './layouts/Sidebar.js'
+import Canvas from './layouts/Canvas.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div></div>
+    <Header />
+    <Sidebar />
+    <Canvas />
   </React.StrictMode>
 );
 
