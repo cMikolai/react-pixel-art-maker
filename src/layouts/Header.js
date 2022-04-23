@@ -9,12 +9,13 @@ const Title = styled.h1`
   height: 20vh;
   display: flex;
   justify-content: center;
-  font-size: calc(16px + 2vmin);
+  font-size: calc(18px + 2vmin);
   width: 100%;
+  align-items: center;
 `
 
 const Header = () => {
-  return <Title>Header</Title>
+  return <Title>Pixel Art Maker</Title>
 }
 
 export default Header
