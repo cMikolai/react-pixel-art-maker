@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Table of Contents
 
 * [Designs](#designs)
+* [Code Dependencies](#code-dependencies)
 * [Available Scripts](#available-scripts)
 * [Contributing](#contributing)
 * [License](#license)
@@ -13,6 +14,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Designs
 
 You can find the link to the design mockups over [here](https://www.figma.com/file/nnBZmGhJ0kMe3g19Q1ER4n/React-Pixel-Art-Maker?node-id=0%3A1).
+
+## Code Dependencies
+
+You can find the full list of code dependencies over [here](https://github.com/cMikolai/react-pixel-art-maker/network/dependencies)
+
+However, some core packages in use I would like to highlight are
+1. [React](https://github.com/facebook/React)
+2. [Styled Components](https://github.com/styled-components/styled-components)
+3. [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+4. [gh-pages](https://github.com/tschaub/gh-pages)
 
 ## Available Scripts
 
