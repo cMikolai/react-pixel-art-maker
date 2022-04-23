@@ -1,13 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+import App from './App';
+import { createGlobalStyle } from 'styled-components'
+
 import reportWebVitals from './reportWebVitals'
-
-import styled, { createGlobalStyle } from 'styled-components'
-
-import Header from './layouts/Header.js'
-import Sidebar from './layouts/Sidebar.js'
-import Canvas from './layouts/Canvas.js'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -20,28 +17,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const App = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-`
-
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-`
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <GlobalStyle />
-    <App>
-      <Sidebar />
-      <Container>
-        <Header />
-        <Canvas />
-      </Container>
-    </App>
+    <GlobalStyle />
+    <App />
   </React.StrictMode>
 )
 
