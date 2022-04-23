@@ -130,7 +130,7 @@ const SizePicker = () => {
 
 const GridSize = () => {
 
-  const [isOpenOption, toggleOpenOption] = useState(true);
+  const [isOpenOption, toggleOpenOption] = useState(false);
 
   return (
     <>
