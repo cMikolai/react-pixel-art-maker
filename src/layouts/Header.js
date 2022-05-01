@@ -19,6 +19,7 @@ const Icon = styled.div`
   z-index: 1;
   left: 20px;
   position: absolute;
+  cursor: pointer;
 `
 
 const Title = styled.h1`

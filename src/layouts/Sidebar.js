@@ -31,6 +31,10 @@ const TopSection = styled.div`
   padding-right: 20px;
 `
 
+const Icon = styled.div`
+  cursor: pointer;
+`
+
 const MainSection = styled.div`
   padding: 20px;
 `
@@ -50,10 +54,12 @@ const Sidebar = props => {
       <TopSection>
         {
           isOpen &&
-          <FontAwesomeIcon
-            size="lg"
-            icon={ faXmark }
-            onClick={() => toggleOpen(false)} />
+          <Icon>
+            <FontAwesomeIcon
+              size="lg"
+              icon={ faXmark }
+              onClick={() => toggleOpen(false)} />
+          </Icon>
         }
       </TopSection>
 

@@ -8,6 +8,7 @@ const Option = styled.h2`
   color: #fff;
   font-size: 14px;
   width: 100%;
+  cursor: pointer;
 `
 
 const MenuIcon = styled.span`
@@ -61,6 +62,7 @@ const Submit = styled.input`
   margin: 0 auto;
   background-color: #E81E63;
   color: #fff;
+  cursor: pointer;
 `
 
 const SizePicker = () => {
