@@ -42,6 +42,14 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+Deploys the React app to GitHub Pages.
+Requires updating [package.json](https://github.com/cMikolai/react-pixel-art-maker/blob/master/package.json), so please make sure to update this line in case you would like to publish your own version via gh-pages.
+
+```
+"homepage": "http://cmikolai.github.io/react-pixel-art-maker",
+```
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
