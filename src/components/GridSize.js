@@ -59,7 +59,7 @@ const Submit = styled.input`
   border-radius: 5px;
   border: none;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 0 20px 0;
   background-color: #E81E63;
   color: #fff;
   cursor: pointer;

@@ -22,12 +22,15 @@ const Container = styled.div`
   width: 100%;
 `
 
-const Canvas = () => {
+const Canvas = props => {
+  const { bgColor } = props
+
   return (
     <Container>
     <GlobalTableStyle />
       <table
-        id="pixel_canvas">
+        id="pixel_canvas"
+        style={{ backgroundColor: bgColor }}>
       </table>
     </Container>
   )

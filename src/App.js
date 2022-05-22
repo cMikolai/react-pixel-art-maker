@@ -18,6 +18,7 @@ const MainContainer = styled.div`
 
 const App = () => {
   const [isOpen, toggleOpen] = useState(true);
+  const [bgColor, setBgColor] = useState('#fff')
 
    return (
      <AppContainer>
@@ -25,15 +26,18 @@ const App = () => {
       {
         isOpen &&
         <Sidebar
-          toggleOpen={toggleOpen}
-          isOpen={isOpen} />
+          toggleOpen={ toggleOpen }
+          isOpen={ isOpen}
+          bgColor={ bgColor }
+          setBgColor={ setBgColor } />
       }
 
        <MainContainer>
          <Header
-          toggleOpen={toggleOpen}
-          isOpen={isOpen} />
-         <Canvas />
+          toggleOpen={ toggleOpen }
+          isOpen={ isOpen } />
+         <Canvas
+          bgColor={ bgColor } />
        </MainContainer>
 
      </AppContainer>

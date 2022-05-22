@@ -4,13 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 import GridSize from '../components/GridSize.js'
+import BackgroundColor from '../components/BackgroundColor.js'
 
 const Container = styled.div`
   background-color: #3F51B5;
   color: #fff;
   margin: 0;
   font-size: calc(16px + 2vmin);
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   flex: 1 0 300px;
   position: relative;
 
@@ -39,6 +41,10 @@ const MainSection = styled.div`
   padding: 20px;
 `
 
+const Setting = styled.div`
+  border-bottom: 1px solid #fff;
+`
+
 const Title = styled.h2`
   color: #fff;
   margin: 0 0 20px 0;
@@ -47,7 +53,7 @@ const Title = styled.h2`
 `
 
 const Sidebar = props => {
-  const { isOpen, toggleOpen } = props
+  const { isOpen, toggleOpen, bgColor, setBgColor } = props
 
   return (
     <Container>
@@ -64,8 +70,19 @@ const Sidebar = props => {
       </TopSection>
 
       <MainSection>
+
         <Title>Canvas Settings</Title>
-          <GridSize />
+
+          <Setting>
+            <GridSize />
+          </Setting>
+
+          <Setting>
+            <BackgroundColor
+              bgColor={ bgColor }
+              setBgColor={ setBgColor } />
+          </Setting>
+
       </MainSection>
 
     </Container>
