@@ -40,6 +40,8 @@ const Icon = styled.div`
 
 const MainSection = styled.div`
   padding: 20px;
+  height: calc(100vh - 130px);
+  overflow: scroll;
 `
 
 const Setting = styled.div`
