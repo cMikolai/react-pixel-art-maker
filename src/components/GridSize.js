@@ -66,22 +66,22 @@ const Submit = styled.input`
 `
 
 const SizePicker = () => {
-  const [height, setHeight] = useState(1);
-  const [width, setWidth] = useState(1);
+  const [height, setHeight] = useState(1)
+  const [width, setWidth] = useState(1)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const canvas = document.querySelector("#pixel_canvas");
-    canvas.innerHTML = '';
+    const canvas = document.querySelector("#pixel_canvas")
+    canvas.innerHTML = ''
 
     for (let x = 0; x < height; x++) {
-      let row = document.createElement("tr");
-      canvas.appendChild(row);
+      let row = document.createElement("tr")
+      canvas.appendChild(row)
 
       for (let y = 0; y < width; y++) {
-        let cell = document.createElement("td");
-        row.appendChild(cell);
+        let cell = document.createElement("td")
+        row.appendChild(cell)
       }
     }
   }
