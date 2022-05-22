@@ -44,6 +44,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run deploy`
 Deploys the React app to GitHub Pages.
+
 Requires updating [package.json](https://github.com/cMikolai/react-pixel-art-maker/blob/master/package.json), so please make sure to update this line in case you would like to publish your own version via gh-pages.
 
 ```
