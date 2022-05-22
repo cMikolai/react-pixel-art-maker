@@ -61,28 +61,28 @@ const Circle = styled.span`
   border-radius: 50%;
 `
 
-const BackgroundColor = props => {
-  const { bgColor, setBgColor } = props
+const Color = props => {
+  const { color, setColor } = props
   const [ isOpenOption, toggleOpenOption ] = useState(false)
 
   return (
     <>
       <Option onClick={ () => toggleOpenOption(!isOpenOption) }>
         <MenuIcon>
-          <FontAwesomeIcon icon={ isOpenOption ? faAngleDown : faAngleRight } />
+          <FontAwesomeIcon icon={isOpenOption ? faAngleDown : faAngleRight} />
         </MenuIcon>
-        Background Color
+        Color
       </Option>
       {
         isOpenOption &&
         <ColorWrapper>
           <CirclePicker
-            onChangeComplete={ (color) => setBgColor(color.hex) }
-            color={ bgColor } />
+            onChangeComplete={ (color) => setColor(color.hex) }
+            color={ color } />
         </ColorWrapper>
       }
     </>
   )
 }
 
-export default BackgroundColor
+export default Color
