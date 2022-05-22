@@ -20,23 +20,6 @@ const MenuIcon = styled.span`
   height: 100%;
 `
 
-const SecondLevelIcon = styled.span`
-  display: inline-block;
-  width: 20px;
-  margin-right: 3px;
-  font-size: 12px;
-  height: 100%;
-  text-align: center;
-`
-
-const Label = styled.label`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  font-size: 12px;
-  align-items: center;
-`
-
 const ColorWrapper = styled.div`
   margin-bottom: 20px;
 
@@ -49,16 +32,6 @@ const ColorWrapper = styled.div`
   & span div span div {
     border: 1px solid black;
   }
-`
-
-const Circle = styled.span`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border-radius: 50%;
 `
 
 const BackgroundColor = props => {
