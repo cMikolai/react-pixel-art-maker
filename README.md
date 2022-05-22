@@ -5,8 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Table of Contents
 
 * [Designs](#designs)
-* [Code Dependencies](#code-dependencies)
 * [Available Scripts](#available-scripts)
+* [Code Dependencies](#code-dependencies)
 * [Contributing](#contributing)
 * [License](#license)
 * [Learn More](#learn-more)
@@ -14,17 +14,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Designs
 
 You can find the link to the design mockups over [here](https://www.figma.com/file/nnBZmGhJ0kMe3g19Q1ER4n/React-Pixel-Art-Maker?node-id=0%3A1).
-
-## Code Dependencies
-
-You can find the full list of code dependencies over [here](https://github.com/cMikolai/react-pixel-art-maker/network/dependencies)
-
-However, some core packages in use I would like to highlight are
-1. [React](https://github.com/facebook/React)
-2. [Styled Components](https://github.com/styled-components/styled-components)
-3. [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
-4. [React Color](https://github.com/casesandberg/react-color)
-5. [gh-pages](https://github.com/tschaub/gh-pages)
 
 ## Available Scripts
 
@@ -62,6 +51,17 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Code Dependencies
+
+You can find the full list of code dependencies over [here](https://github.com/cMikolai/react-pixel-art-maker/network/dependencies)
+
+However, some core packages in use I would like to highlight are
+1. [React](https://github.com/facebook/React)
+2. [Styled Components](https://github.com/styled-components/styled-components)
+3. [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+4. [React Color](https://github.com/casesandberg/react-color)
+5. [gh-pages](https://github.com/tschaub/gh-pages)
 
 ## Contributing
 
