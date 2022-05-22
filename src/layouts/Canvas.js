@@ -8,7 +8,7 @@ const GlobalTableStyle = createGlobalStyle`
     border: 1px solid #282c34;
   }
 
-  td, tr {
+  td {
     width: 20px;
     height: 20px;
     border: 1px solid #282c34;
