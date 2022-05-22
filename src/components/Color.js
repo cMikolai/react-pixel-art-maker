@@ -61,6 +61,11 @@ const Circle = styled.span`
   border-radius: 50%;
 `
 
+const Hint = styled.p`
+  font-size: 12px;
+  margin-top: 20px;
+`
+
 const Color = props => {
   const { color, setColor } = props
   const [ isOpenOption, toggleOpenOption ] = useState(false)
@@ -79,6 +84,8 @@ const Color = props => {
           <CirclePicker
             onChangeComplete={ (color) => setColor(color.hex) }
             color={ color } />
+
+        <Hint>Hint: Double click to remove a color</Hint>
         </ColorWrapper>
       }
     </>

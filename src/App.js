@@ -19,6 +19,7 @@ const MainContainer = styled.div`
 const App = () => {
   const [isOpen, toggleOpen] = useState(true);
   const [bgColor, setBgColor] = useState('#fff')
+  const [color, setColor] = useState('#f44336')
 
    return (
      <AppContainer>
@@ -29,7 +30,9 @@ const App = () => {
           toggleOpen={ toggleOpen }
           isOpen={ isOpen}
           bgColor={ bgColor }
-          setBgColor={ setBgColor } />
+          setBgColor={ setBgColor }
+          color={ color }
+          setColor={ setColor } />
       }
 
        <MainContainer>
@@ -37,7 +40,8 @@ const App = () => {
           toggleOpen={ toggleOpen }
           isOpen={ isOpen } />
          <Canvas
-          bgColor={ bgColor } />
+          bgColor={ bgColor }
+          color={ color } />
        </MainContainer>
 
      </AppContainer>

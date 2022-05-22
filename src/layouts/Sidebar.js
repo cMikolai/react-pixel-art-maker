@@ -5,6 +5,7 @@ import { faXmark, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 import GridSize from '../components/GridSize.js'
 import BackgroundColor from '../components/BackgroundColor.js'
+import Color from '../components/Color.js'
 
 const Container = styled.div`
   background-color: #3F51B5;
@@ -53,7 +54,7 @@ const Title = styled.h2`
 `
 
 const Sidebar = props => {
-  const { isOpen, toggleOpen, bgColor, setBgColor } = props
+  const { isOpen, toggleOpen, bgColor, setBgColor, color, setColor } = props
 
   return (
     <Container>
@@ -81,6 +82,12 @@ const Sidebar = props => {
             <BackgroundColor
               bgColor={ bgColor }
               setBgColor={ setBgColor } />
+          </Setting>
+
+          <Setting>
+            <Color
+              color={ color }
+              setColor={ setColor } />
           </Setting>
 
       </MainSection>
