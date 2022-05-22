@@ -40,7 +40,7 @@ const Icon = styled.div`
 
 const MainSection = styled.div`
   padding: 20px;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 165px);
   overflow: scroll;
 `
 
@@ -53,6 +53,21 @@ const Title = styled.h2`
   margin: 0 0 20px 0;
   font-size: 16px;
   width: 100%;
+`
+
+const FooterSection = styled.div`
+  font-size: 12px;
+  text-align: right;
+  padding: 0 20px 20px 0;
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
 `
 
 const Sidebar = props => {
@@ -93,6 +108,10 @@ const Sidebar = props => {
           </Setting>
 
       </MainSection>
+
+      <FooterSection>
+        <a href="https://github.com/cMikolai">cMikolai</a>
+      </FooterSection>
 
     </Container>
   )
