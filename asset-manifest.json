@@ -1,13 +1,12 @@
 {
-  "main.css": "/react-pixel-art-maker/static/css/main.1e053c7d.chunk.css",
-  "main.js": "/react-pixel-art-maker/static/js/main.a5f8fd3f.chunk.js",
-  "main.js.map": "/react-pixel-art-maker/static/js/main.a5f8fd3f.chunk.js.map",
-  "runtime~main.js": "/react-pixel-art-maker/static/js/runtime~main.7d051342.js",
-  "runtime~main.js.map": "/react-pixel-art-maker/static/js/runtime~main.7d051342.js.map",
-  "static/js/2.894bb184.chunk.js": "/react-pixel-art-maker/static/js/2.894bb184.chunk.js",
-  "static/js/2.894bb184.chunk.js.map": "/react-pixel-art-maker/static/js/2.894bb184.chunk.js.map",
-  "index.html": "/react-pixel-art-maker/index.html",
-  "precache-manifest.1e5749d5af19e93a74379f1ba4a5d2f9.js": "/react-pixel-art-maker/precache-manifest.1e5749d5af19e93a74379f1ba4a5d2f9.js",
-  "service-worker.js": "/react-pixel-art-maker/service-worker.js",
-  "static/css/main.1e053c7d.chunk.css.map": "/react-pixel-art-maker/static/css/main.1e053c7d.chunk.css.map"
+  "files": {
+    "main.js": "/react-pixel-art-maker/static/js/main.6153829b.js",
+    "static/js/787.526b1bdd.chunk.js": "/react-pixel-art-maker/static/js/787.526b1bdd.chunk.js",
+    "index.html": "/react-pixel-art-maker/index.html",
+    "main.6153829b.js.map": "/react-pixel-art-maker/static/js/main.6153829b.js.map",
+    "787.526b1bdd.chunk.js.map": "/react-pixel-art-maker/static/js/787.526b1bdd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6153829b.js"
+  ]
 }
