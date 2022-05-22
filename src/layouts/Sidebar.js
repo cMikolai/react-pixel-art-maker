@@ -26,7 +26,7 @@ const Container = styled.div`
 `
 
 const TopSection = styled.div`
-  height: 20vh;
+  height: 90px;
   font-size: 18px;
   align-items: center;
   display: flex;

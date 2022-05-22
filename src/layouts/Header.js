@@ -6,9 +6,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Container = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 90px;
   background-color: #3F51B5;
-  height: 20vh;
   color: #fff;
   align-items: center;
   position: relative;
