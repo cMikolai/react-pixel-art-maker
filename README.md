@@ -23,7 +23,8 @@ However, some core packages in use I would like to highlight are
 1. [React](https://github.com/facebook/React)
 2. [Styled Components](https://github.com/styled-components/styled-components)
 3. [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
-4. [gh-pages](https://github.com/tschaub/gh-pages)
+4. [React Color](https://github.com/casesandberg/react-color)
+5. [gh-pages](https://github.com/tschaub/gh-pages)
 
 ## Available Scripts
 
