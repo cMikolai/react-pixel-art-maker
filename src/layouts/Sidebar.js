@@ -58,15 +58,17 @@ const Title = styled.h2`
 const FooterSection = styled.div`
   font-size: 12px;
   text-align: right;
-  padding: 0 20px 20px 0;
+  padding-top: 10px;
+  margin: 0 20px 20px 0;
 
   & a {
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
   }
 
   & a:hover {
-    text-decoration: underline;
+    color: #E81E63;
   }
 `
 
@@ -110,7 +112,7 @@ const Sidebar = props => {
       </MainSection>
 
       <FooterSection>
-        <a href="https://github.com/cMikolai">cMikolai</a>
+        made by <a href="https://github.com/cMikolai">cMikolai</a>
       </FooterSection>
 
     </Container>
