@@ -27,6 +27,7 @@ const ColorWrapper = styled.div`
     background-color: #fff;
     border-radius: 50%;
     border: 1px solid black;
+    margin-right: 12px !important;
   }
 
   & span div span div {
