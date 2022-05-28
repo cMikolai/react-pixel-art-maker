@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown, faArrowsAltV, faArrowsAltH } from '@fortawesome/free-solid-svg-icons'
 
-import { ColorWrapper, SidebarOption, SidebarMenuIcon, SidebarSecondLevelIcon, SidebarLabel, SidebarInput, SidebarSubmit } from './styled'
+import { SidebarOption, SidebarMenuIcon, SidebarSecondLevelIcon, SidebarLabel, SidebarInput, SidebarSubmit } from './styled'
 import { adjustCellHeight } from '../helpers/CanvasCells'
 
 const SizePicker = () => {
