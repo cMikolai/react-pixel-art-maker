@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/react-pixel-art-maker/static/js/main.6153829b.js",
+    "main.js": "/react-pixel-art-maker/static/js/main.b58cc30d.js",
     "static/js/787.526b1bdd.chunk.js": "/react-pixel-art-maker/static/js/787.526b1bdd.chunk.js",
     "index.html": "/react-pixel-art-maker/index.html",
-    "main.6153829b.js.map": "/react-pixel-art-maker/static/js/main.6153829b.js.map",
+    "main.b58cc30d.js.map": "/react-pixel-art-maker/static/js/main.b58cc30d.js.map",
     "787.526b1bdd.chunk.js.map": "/react-pixel-art-maker/static/js/787.526b1bdd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6153829b.js"
+    "static/js/main.b58cc30d.js"
   ]
 }
