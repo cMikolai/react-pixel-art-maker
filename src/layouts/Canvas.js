@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalTableStyle = createGlobalStyle`
@@ -23,9 +23,26 @@ const Container = styled.div`
   width: 100%;
 `
 
+const adjustCellHeight = () => {
+  const tableCells = document.querySelectorAll("#pixel_canvas td")
+
+  if (tableCells.length > 0) {
+    const tableCellWidth = document.querySelector("#pixel_canvas td").offsetWidth
+
+    if (tableCellWidth < 22) {
+      tableCells.forEach(cell => cell.style.height = tableCellWidth + 'px')
+    }
+  }
+}
+
 const Canvas = props => {
   const { bgColor, color } = props
   const [ isMouseDown, setMouseDown ] = useState(false)
+
+  useEffect(() => {
+    adjustCellHeight()
+    window.addEventListener('resize', adjustCellHeight)
+  })
 
   return (
     <Container>
