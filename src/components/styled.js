@@ -11,6 +11,33 @@ export const MainContainer = styled.div`
   width: 100%;
   height: 100%;
 `
+// Header
+export const Container = styled.div`
+  display: flex;
+  width: 100%;
+  height: 90px;
+  background-color: #3F51B5;
+  color: #fff;
+  align-items: center;
+  position: relative;
+`
+
+export const Icon = styled.div`
+  font-size: 18px;
+  z-index: 1;
+  left: 20px;
+  position: absolute;
+  cursor: pointer;
+`
+
+export const Title = styled.h1`
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: calc(18px + 2vmin);
+  width: 100%;
+`
 // Sidebar Settings
 export const Option = styled.h2`
   color: #fff;
