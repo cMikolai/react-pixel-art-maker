@@ -2,13 +2,19 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-import { HeaderContainer, HeaderIcon, HeaderTitle } from '../components/styled'
+import { Container, HeaderIcon, HeaderTitle } from '../components/styled'
 
 const Header = props => {
   const { isOpen, toggleOpen } = props
 
   return (
-    <HeaderContainer>
+    <Container
+      display="flex"
+      height="90px"
+      bgColor="#3F51B5"
+      color="#fff"
+      alignItems="center"
+      position="relative">
       {
         !isOpen &&
         <HeaderIcon>
@@ -19,7 +25,7 @@ const Header = props => {
         </HeaderIcon>
       }
       <HeaderTitle>Pixel Art Maker</HeaderTitle>
-    </HeaderContainer>
+    </Container>
   )
 }
 

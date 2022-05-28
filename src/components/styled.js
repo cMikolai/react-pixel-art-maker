@@ -1,5 +1,16 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
+// Global
+export const Container = styled.div`
+  display: ${props => props.display};;
+  width: 100%;
+  height: ${props => props.height};
+  background-color: ${props => props.bgColor};
+  color: ${props => props.color};
+  align-items: ${props => props.alignItems};
+  position: ${props => props.relative};
+`
+
 // App
 export const AppContainer = styled.div`
   display: ${props => props.display};;

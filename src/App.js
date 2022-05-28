@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Header from './layouts/Header.js'
 import Sidebar from './layouts/Sidebar.js'
 import Canvas from './layouts/Canvas.js'
-import { AppContainer } from './components/styled'
+import { Container } from './components/styled'
 
 const App = () => {
   const [isOpen, toggleOpen] = useState(true);
@@ -11,7 +11,9 @@ const App = () => {
   const [color, setColor] = useState('#f44336')
 
    return (
-     <AppContainer display="flex">
+     <Container
+      display="flex"
+      height="100%">
 
       {
         isOpen &&
@@ -24,16 +26,18 @@ const App = () => {
           setColor={ setColor } />
       }
 
-       <AppContainer display="block">
+       <Container
+        display="block"
+        height="100%">
          <Header
             toggleOpen={ toggleOpen }
             isOpen={ isOpen } />
          <Canvas
             bgColor={ bgColor }
             color={ color } />
-       </AppContainer>
+       </Container>
 
-     </AppContainer>
+     </Container>
    )
  }
 
