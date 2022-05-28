@@ -37,11 +37,11 @@ const App = () => {
 
        <MainContainer>
          <Header
-          toggleOpen={ toggleOpen }
-          isOpen={ isOpen } />
+            toggleOpen={ toggleOpen }
+            isOpen={ isOpen } />
          <Canvas
-          bgColor={ bgColor }
-          color={ color } />
+            bgColor={ bgColor }
+            color={ color } />
        </MainContainer>
 
      </AppContainer>
