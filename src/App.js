@@ -1,20 +1,9 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
 
 import Header from './layouts/Header.js'
 import Sidebar from './layouts/Sidebar.js'
 import Canvas from './layouts/Canvas.js'
-
-const AppContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-`
-
-const MainContainer = styled.div`
-  width: 100%;
-  height: 100%;
-`
+import { AppContainer, MainContainer } from './components/styled'
 
 const App = () => {
   const [isOpen, toggleOpen] = useState(true);

@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+// App
+export const AppContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+`
+
+export const MainContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`
 // Sidebar Settings
 export const Option = styled.h2`
   color: #fff;
