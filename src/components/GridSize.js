@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -65,6 +65,18 @@ const Submit = styled.input`
   cursor: pointer;
 `
 
+const adjustCellHeight = () => {
+  const tableCells = document.querySelectorAll("#pixel_canvas td")
+
+  if (tableCells.length > 0) {
+    const tableCellWidth = document.querySelector("#pixel_canvas td").offsetWidth
+
+    if (tableCellWidth < 22) {
+      tableCells.forEach(cell => cell.style.height = tableCellWidth + 'px')
+    }
+  }
+}
+
 const SizePicker = () => {
   const [height, setHeight] = useState(1)
   const [width, setWidth] = useState(1)
@@ -84,8 +96,13 @@ const SizePicker = () => {
         row.appendChild(cell)
       }
     }
+
+    adjustCellHeight()
   }
 
+  useEffect(() => {
+    window.addEventListener('resize', adjustCellHeight)
+  })
 
   return (
     <form id="sizePicker">

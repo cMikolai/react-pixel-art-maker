@@ -11,6 +11,7 @@ const GlobalTableStyle = createGlobalStyle`
   td {
     width: 20px;
     height: 20px;
+    padding: 0;
     border: 1px solid #282c34;
   }
 `
