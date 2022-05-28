@@ -1,69 +1,8 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown, faArrowsAltV, faArrowsAltH } from '@fortawesome/free-solid-svg-icons'
 
-const Option = styled.h2`
-  color: #fff;
-  font-size: 14px;
-  width: 100%;
-  cursor: pointer;
-`
-
-const MenuIcon = styled.span`
-  display: inline-block;
-  width: 16px;
-  margin-right: 5px;
-  font-size: 14px;
-  height: 100%;
-`
-
-const SecondLevelIcon = styled.span`
-  display: inline-block;
-  width: 20px;
-  margin-right: 3px;
-  font-size: 12px;
-  height: 100%;
-  text-align: center;
-`
-
-const Label = styled.label`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  font-size: 12px;
-  align-items: center;
-`
-
-const Input = styled.input`
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  font-size: 12px;
-  padding: 10px 0 10px 15px;
-  border-radius: 5px;
-  border: none;
-  max-width: 150px;
-  margin: 5px 0 5px 15px;
-`
-
-const Submit = styled.input`
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  font-size: 12px;
-  padding: 10px 15px 10px 15px;
-  border-radius: 5px;
-  border: none;
-  width: 100%;
-  margin: 0 0 20px 0;
-  background-color: #E81E63;
-  color: #fff;
-  cursor: pointer;
-`
+import { ColorWrapper, Option, MenuIcon, SecondLevelIcon, Label, Input, Submit } from './styled'
 
 const adjustCellHeight = () => {
   const tableCells = document.querySelectorAll("#pixel_canvas td")
