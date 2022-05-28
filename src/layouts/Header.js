@@ -2,24 +2,24 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-import { Container, Icon, Title } from '../components/styled'
+import { HeaderContainer, HeaderIcon, HeaderTitle } from '../components/styled'
 
 const Header = props => {
   const { isOpen, toggleOpen } = props
 
   return (
-    <Container>
+    <HeaderContainer>
       {
         !isOpen &&
-        <Icon>
+        <HeaderIcon>
           <FontAwesomeIcon
             size="lg"
             icon={ faBars }
             onClick={() => toggleOpen(true)} />
-        </Icon>
+        </HeaderIcon>
       }
-      <Title>Pixel Art Maker</Title>
-    </Container>
+      <HeaderTitle>Pixel Art Maker</HeaderTitle>
+    </HeaderContainer>
   )
 }
 

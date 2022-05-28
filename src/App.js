@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Header from './layouts/Header.js'
 import Sidebar from './layouts/Sidebar.js'
 import Canvas from './layouts/Canvas.js'
-import { AppContainer, MainContainer } from './components/styled'
+import { AppContainer, AppMainContainer } from './components/styled'
 
 const App = () => {
   const [isOpen, toggleOpen] = useState(true);
@@ -24,14 +24,14 @@ const App = () => {
           setColor={ setColor } />
       }
 
-       <MainContainer>
+       <AppMainContainer>
          <Header
             toggleOpen={ toggleOpen }
             isOpen={ isOpen } />
          <Canvas
             bgColor={ bgColor }
             color={ color } />
-       </MainContainer>
+       </AppMainContainer>
 
      </AppContainer>
    )

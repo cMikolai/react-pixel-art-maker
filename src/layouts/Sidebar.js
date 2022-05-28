@@ -6,14 +6,14 @@ import GridSize from '../components/GridSize.js'
 import BackgroundColor from '../components/BackgroundColor.js'
 import Color from '../components/Color.js'
 
-import { SidebarContainer, TopSection, SidebarIcon, MainSection, Setting, SidebarTitle, FooterSection } from '../components/styled'
+import { SidebarContainer, SidebarTopSection, SidebarIcon, SidebarMainSection, SidebarSetting, SidebarTitle, SidebarFooter } from '../components/styled'
 
 const Sidebar = props => {
   const { isOpen, toggleOpen, bgColor, setBgColor, color, setColor } = props
 
   return (
     <SidebarContainer>
-      <TopSection>
+      <SidebarTopSection>
         {
           isOpen &&
           <SidebarIcon>
@@ -23,33 +23,33 @@ const Sidebar = props => {
               onClick={() => toggleOpen(false)} />
           </SidebarIcon>
         }
-      </TopSection>
+      </SidebarTopSection>
 
-      <MainSection>
+      <SidebarMainSection>
 
         <SidebarTitle>Canvas Settings</SidebarTitle>
 
-          <Setting>
+          <SidebarSetting>
             <GridSize />
-          </Setting>
+          </SidebarSetting>
 
-          <Setting>
+          <SidebarSetting>
             <BackgroundColor
               bgColor={ bgColor }
               setBgColor={ setBgColor } />
-          </Setting>
+          </SidebarSetting>
 
-          <Setting>
+          <SidebarSetting>
             <Color
               color={ color }
               setColor={ setColor } />
-          </Setting>
+          </SidebarSetting>
 
-      </MainSection>
+      </SidebarMainSection>
 
-      <FooterSection>
+      <SidebarFooter>
         made by <a href="https://github.com/cMikolai">cMikolai</a>
-      </FooterSection>
+      </SidebarFooter>
 
     </SidebarContainer>
   )

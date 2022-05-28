@@ -3,7 +3,7 @@ import { CirclePicker } from 'react-color'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
-import { ColorWrapper, Option, MenuIcon, Hint } from './styled'
+import { SidebarColorWrapper, SidebarOption, SidebarMenuIcon, SidebarHint } from './styled'
 
 const Color = props => {
   const { color, setColor } = props
@@ -11,21 +11,21 @@ const Color = props => {
 
   return (
     <>
-      <Option onClick={ () => toggleOpenOption(!isOpenOption) }>
-        <MenuIcon>
+      <SidebarOption onClick={ () => toggleOpenOption(!isOpenOption) }>
+        <SidebarMenuIcon>
           <FontAwesomeIcon icon={isOpenOption ? faAngleDown : faAngleRight} />
-        </MenuIcon>
+        </SidebarMenuIcon>
         Color
-      </Option>
+      </SidebarOption>
       {
         isOpenOption &&
-        <ColorWrapper>
+        <SidebarColorWrapper>
           <CirclePicker
             onChangeComplete={ (color) => setColor(color.hex) }
             color={ color } />
 
-        <Hint>Hint: Double click to remove a color</Hint>
-        </ColorWrapper>
+        <SidebarHint>Hint: Double click to remove a color</SidebarHint>
+        </SidebarColorWrapper>
       }
     </>
   )

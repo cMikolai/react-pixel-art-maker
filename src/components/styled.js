@@ -7,13 +7,13 @@ export const AppContainer = styled.div`
   height: 100%;
 `
 
-export const MainContainer = styled.div`
+export const AppMainContainer = styled.div`
   width: 100%;
   height: 100%;
 `
 
 // Header
-export const Container = styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   width: 100%;
   height: 90px;
@@ -23,7 +23,7 @@ export const Container = styled.div`
   position: relative;
 `
 
-export const Icon = styled.div`
+export const HeaderIcon = styled.div`
   font-size: 18px;
   z-index: 1;
   left: 20px;
@@ -31,7 +31,7 @@ export const Icon = styled.div`
   cursor: pointer;
 `
 
-export const Title = styled.h1`
+export const HeaderTitle = styled.h1`
   text-align: center;
   margin: 0;
   display: flex;
@@ -59,7 +59,7 @@ export const SidebarContainer = styled.div`
   }
 `
 
-export const TopSection = styled.div`
+export const SidebarTopSection = styled.div`
   height: 90px;
   font-size: 18px;
   align-items: center;
@@ -72,13 +72,13 @@ export const SidebarIcon = styled.div`
   cursor: pointer;
 `
 
-export const MainSection = styled.div`
+export const SidebarMainSection = styled.div`
   padding: 20px;
   height: calc(100vh - 165px);
   overflow: scroll;
 `
 
-export const Setting = styled.div`
+export const SidebarSetting = styled.div`
   border-bottom: 1px solid #fff;
 `
 
@@ -89,7 +89,7 @@ export const SidebarTitle = styled.h2`
   width: 100%;
 `
 
-export const FooterSection = styled.div`
+export const SidebarFooter = styled.div`
   font-size: 12px;
   text-align: right;
   padding-top: 10px;
@@ -107,14 +107,14 @@ export const FooterSection = styled.div`
 `
 
 // Sidebar Settings
-export const Option = styled.h2`
+export const SidebarOption = styled.h2`
   color: #fff;
   font-size: 14px;
   width: 100%;
   cursor: pointer;
 `
 
-export const MenuIcon = styled.span`
+export const SidebarMenuIcon = styled.span`
   display: inline-block;
   width: 16px;
   margin-right: 5px;
@@ -122,7 +122,7 @@ export const MenuIcon = styled.span`
   height: 100%;
 `
 
-export const SecondLevelIcon = styled.span`
+export const SidebarSecondLevelIcon = styled.span`
   display: inline-block;
   width: 20px;
   margin-right: 3px;
@@ -131,7 +131,7 @@ export const SecondLevelIcon = styled.span`
   text-align: center;
 `
 
-export const Label = styled.label`
+export const SidebarLabel = styled.label`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -139,7 +139,7 @@ export const Label = styled.label`
   align-items: center;
 `
 
-export const Input = styled.input`
+export const SidebarInput = styled.input`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -152,7 +152,7 @@ export const Input = styled.input`
   margin: 5px 0 5px 15px;
 `
 
-export const Submit = styled.input`
+export const SidebarSubmit = styled.input`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -168,7 +168,7 @@ export const Submit = styled.input`
   cursor: pointer;
 `
 
-export const ColorWrapper = styled.div`
+export const SidebarColorWrapper = styled.div`
   margin-bottom: 20px;
 
   & span div {
@@ -183,7 +183,7 @@ export const ColorWrapper = styled.div`
   }
 `
 
-export const Hint = styled.p`
+export const SidebarHint = styled.p`
   font-size: 12px;
   margin-top: 20px;
 `

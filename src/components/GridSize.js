@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown, faArrowsAltV, faArrowsAltH } from '@fortawesome/free-solid-svg-icons'
 
-import { ColorWrapper, Option, MenuIcon, SecondLevelIcon, Label, Input, Submit } from './styled'
+import { ColorWrapper, SidebarOption, SidebarMenuIcon, SidebarSecondLevelIcon, SidebarLabel, SidebarInput, SidebarSubmit } from './styled'
 
 const adjustCellHeight = () => {
   const tableCells = document.querySelectorAll("#pixel_canvas td")
@@ -41,37 +41,37 @@ const SizePicker = () => {
 
   return (
     <form id="sizePicker">
-      <Label>
-        <SecondLevelIcon>
+      <SidebarLabel>
+        <SidebarSecondLevelIcon>
           <FontAwesomeIcon icon={faArrowsAltV} />
-        </SecondLevelIcon>
+        </SidebarSecondLevelIcon>
         Grid Height:
 
-        <Input
+        <SidebarInput
           type="number"
           id="input_height"
           name="height"
           min="1"
           value={height}
           onChange={e => setHeight(e.target.value)} />
-      </Label>
+      </SidebarLabel>
 
-      <Label>
-        <SecondLevelIcon>
+      <SidebarLabel>
+        <SidebarSecondLevelIcon>
           <FontAwesomeIcon icon={faArrowsAltH} />
-        </SecondLevelIcon>
+        </SidebarSecondLevelIcon>
         Grid Width:
 
-        <Input
+        <SidebarInput
           type="number"
           id="input_width"
           name="width"
           min="1"
           value={width}
           onChange={e => setWidth(e.target.value)} />
-      </Label>
+      </SidebarLabel>
 
-      <Submit
+      <SidebarSubmit
         type="submit"
         id="input_submit"
         value="Create grid"
@@ -87,12 +87,12 @@ const GridSize = () => {
 
   return (
     <>
-      <Option onClick={() => toggleOpenOption(!isOpenOption)}>
-        <MenuIcon>
+      <SidebarOption onClick={() => toggleOpenOption(!isOpenOption)}>
+        <SidebarMenuIcon>
           <FontAwesomeIcon icon={isOpenOption ? faAngleDown : faAngleRight} />
-        </MenuIcon>
+        </SidebarMenuIcon>
         Grid Size
-      </Option>
+      </SidebarOption>
       {
         isOpenOption && <SizePicker />
       }
