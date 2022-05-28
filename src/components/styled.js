@@ -40,6 +40,72 @@ export const Title = styled.h1`
   width: 100%;
 `
 
+// Sidebar
+export const SidebarContainer = styled.div`
+  background-color: #3F51B5;
+  color: #fff;
+  margin: 0;
+  font-size: calc(16px + 2vmin);
+  min-height: 100vh;
+  height: 100%;
+  flex: 1 0 300px;
+  position: relative;
+
+  @media (max-width: 767px) {
+    position: fixed;
+    width: 300px;
+    z-index: 1;
+    box-shadow: 2px 5px 10px black;
+  }
+`
+
+export const TopSection = styled.div`
+  height: 90px;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+`
+
+export const SidebarIcon = styled.div`
+  cursor: pointer;
+`
+
+export const MainSection = styled.div`
+  padding: 20px;
+  height: calc(100vh - 165px);
+  overflow: scroll;
+`
+
+export const Setting = styled.div`
+  border-bottom: 1px solid #fff;
+`
+
+export const SidebarTitle = styled.h2`
+  color: #fff;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  width: 100%;
+`
+
+export const FooterSection = styled.div`
+  font-size: 12px;
+  text-align: right;
+  padding-top: 10px;
+  margin: 0 20px 20px 0;
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  & a:hover {
+    color: #E81E63;
+  }
+`
+
 // Sidebar Settings
 export const Option = styled.h2`
   color: #fff;
