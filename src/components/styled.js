@@ -11,24 +11,7 @@ export const Container = styled.div`
   position: ${props => props.relative};
 `
 
-// App
-export const AppContainer = styled.div`
-  display: ${props => props.display};;
-  width: 100%;
-  height: 100%;
-`
-
 // Header
-export const HeaderContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: 90px;
-  background-color: #3F51B5;
-  color: #fff;
-  align-items: center;
-  position: relative;
-`
-
 export const HeaderIcon = styled.div`
   font-size: 18px;
   z-index: 1;
