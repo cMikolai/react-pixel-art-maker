@@ -17,11 +17,13 @@ const SizePicker = () => {
 
     for (let x = 0; x < height; x++) {
       let row = document.createElement("tr")
+      row.className = 'row-' + x
       canvas.appendChild(row)
 
       for (let y = 0; y < width; y++) {
-        let cell = document.createElement("td")
-        row.appendChild(cell)
+        let col = document.createElement("td")
+        col.className = 'col-' + y
+        row.appendChild(col)
       }
     }
 
