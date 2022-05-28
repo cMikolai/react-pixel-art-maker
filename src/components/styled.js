@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 // App
 export const AppContainer = styled.div`
@@ -11,6 +11,7 @@ export const MainContainer = styled.div`
   width: 100%;
   height: 100%;
 `
+
 // Header
 export const Container = styled.div`
   display: flex;
@@ -38,6 +39,7 @@ export const Title = styled.h1`
   font-size: calc(18px + 2vmin);
   width: 100%;
 `
+
 // Sidebar Settings
 export const Option = styled.h2`
   color: #fff;
@@ -118,4 +120,27 @@ export const ColorWrapper = styled.div`
 export const Hint = styled.p`
   font-size: 12px;
   margin-top: 20px;
+`
+
+// Canvas
+export const GlobalTableStyle = createGlobalStyle`
+  table {
+    border-spacing: 0;
+    margin: 20px;
+    border: 1px solid #282c34;
+  }
+
+  td {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 1px solid #282c34;
+  }
+`
+
+export const CanvasContainer = styled.div`
+  color: #000;
+  margin: 0;
+  font-size: calc(16px + 2vmin);
+  width: 100%;
 `

@@ -1,27 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
 
-const GlobalTableStyle = createGlobalStyle`
-  table {
-    border-spacing: 0;
-    margin: 20px;
-    border: 1px solid #282c34;
-  }
-
-  td {
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    border: 1px solid #282c34;
-  }
-`
-
-const Container = styled.div`
-  color: #000;
-  margin: 0;
-  font-size: calc(16px + 2vmin);
-  width: 100%;
-`
+import { GlobalTableStyle, CanvasContainer } from '../components/styled'
 
 const adjustCellHeight = () => {
   const tableCells = document.querySelectorAll("#pixel_canvas td")
@@ -45,7 +24,7 @@ const Canvas = props => {
   })
 
   return (
-    <Container>
+    <CanvasContainer>
       <GlobalTableStyle />
       <table
         id="pixel_canvas"
@@ -72,7 +51,7 @@ const Canvas = props => {
           } : null }
         onTouchEnd={ () => setMouseDown(false) }
         onDoubleClick={ (e) => { e.target.style.backgroundColor = '' }} />
-    </Container>
+    </CanvasContainer>
   )
 }
 
