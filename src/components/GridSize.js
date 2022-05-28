@@ -65,6 +65,18 @@ const Submit = styled.input`
   cursor: pointer;
 `
 
+const adjustCellHeight = () => {
+  const tableCells = document.querySelectorAll("#pixel_canvas td")
+
+  if (tableCells) {
+    const tableCellWidth = document.querySelector("#pixel_canvas td").offsetWidth
+
+    if (tableCellWidth < 22) {
+      tableCells.forEach(cell => cell.style.height = tableCellWidth + 'px')
+    }
+  }
+}
+
 const SizePicker = () => {
   const [height, setHeight] = useState(1)
   const [width, setWidth] = useState(1)
@@ -84,8 +96,9 @@ const SizePicker = () => {
         row.appendChild(cell)
       }
     }
-  }
 
+    adjustCellHeight()
+  }
 
   return (
     <form id="sizePicker">
