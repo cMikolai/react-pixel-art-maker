@@ -2,12 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 // App
 export const AppContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-`
-
-export const AppMainContainer = styled.div`
+  display: ${props => props.display};;
   width: 100%;
   height: 100%;
 `
