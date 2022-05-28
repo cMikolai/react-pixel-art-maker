@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -99,10 +99,6 @@ const SizePicker = () => {
 
     adjustCellHeight()
   }
-
-  useEffect(() => {
-    window.addEventListener('resize', adjustCellHeight)
-  })
 
   return (
     <form id="sizePicker">
