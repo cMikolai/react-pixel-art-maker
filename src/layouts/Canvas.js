@@ -1,18 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { GlobalTableStyle, CanvasContainer } from '../components/styled'
-
-const adjustCellHeight = () => {
-  const tableCells = document.querySelectorAll("#pixel_canvas td")
-
-  if (tableCells.length > 0) {
-    const tableCellWidth = document.querySelector("#pixel_canvas td").offsetWidth
-
-    if (tableCellWidth < 22) {
-      tableCells.forEach(cell => cell.style.height = tableCellWidth + 'px')
-    }
-  }
-}
+import { adjustCellHeight } from '../helpers/CanvasCells'
 
 const Canvas = props => {
   const { bgColor, color } = props

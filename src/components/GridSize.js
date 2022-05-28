@@ -3,18 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown, faArrowsAltV, faArrowsAltH } from '@fortawesome/free-solid-svg-icons'
 
 import { ColorWrapper, SidebarOption, SidebarMenuIcon, SidebarSecondLevelIcon, SidebarLabel, SidebarInput, SidebarSubmit } from './styled'
-
-const adjustCellHeight = () => {
-  const tableCells = document.querySelectorAll("#pixel_canvas td")
-
-  if (tableCells.length > 0) {
-    const tableCellWidth = document.querySelector("#pixel_canvas td").offsetWidth
-
-    if (tableCellWidth < 22) {
-      tableCells.forEach(cell => cell.style.height = tableCellWidth + 'px')
-    }
-  }
-}
+import { adjustCellHeight } from '../helpers/CanvasCells'
 
 const SizePicker = () => {
   const [height, setHeight] = useState(1)
