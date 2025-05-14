@@ -10,7 +10,15 @@ const Canvas = props => {
   useEffect(() => {
     adjustCellHeight()
     window.addEventListener('resize', adjustCellHeight)
-  })
+    return () => window.removeEventListener('resize', adjustCellHeight)
+  }, [])
+
+  const paintCell = (e) => {
+    if (e.target.tagName === 'TD') {
+      e.target.style.backgroundColor = color;
+      setMouseDown(true)
+    }
+  }
 
   return (
     <CanvasContainer>
@@ -18,25 +26,17 @@ const Canvas = props => {
       <table
         id="pixel_canvas"
         style={{ backgroundColor: bgColor }}
-        onMouseDown={ (e) => {
-          e.target.style.backgroundColor = color;
-          setMouseDown(true)
-        }}
+        onMouseDown={ (e) => paintCell(e) }
         onMouseMove={
           isMouseDown ? (e) => {
-            e.target.style.backgroundColor = color;
-            setMouseDown(true)
+            paintCell(e)
           } : null }
         onMouseUp={ () => setMouseDown(false) }
         onMouseLeave={ () => setMouseDown(false) }
-        onTouchStart={ (e) => {
-          e.target.style.backgroundColor = color;
-          setMouseDown(true)
-        }}
+        onTouchStart={ (e) => paintCell(e)}
         onTouchMove={
           isMouseDown ? (e) => {
-            e.target.style.backgroundColor = color;
-            setMouseDown(true)
+            paintCell(e)
           } : null }
         onTouchEnd={ () => setMouseDown(false) }
         onDoubleClick={ (e) => { e.target.style.backgroundColor = '' }} />
